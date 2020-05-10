@@ -1,7 +1,11 @@
 # Postgres-Database-Transaction-in-Golang
-Demonstrate usage of transaction in Postgres Database using Golang
+```
 
+Demonstrate usage of transaction in Postgres Database using Golang
+```
 # Table schema
+
+```javascript
 postgres=# \d sales.employee
               Table "sales.employee"
  Column |  Type   | Collation | Nullable | Default 
@@ -12,9 +16,12 @@ postgres=# \d sales.employee
  salary | integer |           |          | 
 Indexes:
     "employee_pkey" PRIMARY KEY, btree (id)
-    
+````
     
 # For Single insert db query execution
+
+```javascript
+
 C02YM0ADJG5J:plsql pkuma679$ go run main.go 
 Executing with transaction
 Total time taken1 :  0.520
@@ -36,8 +43,11 @@ Executing with transaction
 Total time taken1 :  0.518
 Executing without transaction
 Total time taken1 :  1.125
+```
 
 # For 500 insert db query execution
+```javascript
+
 C02YM0ADJG5J:plsql pkuma679$ go run main.go 
 Executing with transaction
 Total time taken1 :  13.415
@@ -59,3 +69,4 @@ Executing with transaction
 Total time taken1 :  11.944
 Executing without transaction
 Total time taken1 :  10.191
+```
