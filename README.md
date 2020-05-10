@@ -1,7 +1,7 @@
 # Postgres-Database-Transaction-in-Golang
 Demonstrate usage of transaction in Postgres Database using Golang
 
-Table schema
+# Table schema
 postgres=# \d sales.employee
               Table "sales.employee"
  Column |  Type   | Collation | Nullable | Default 
@@ -14,7 +14,7 @@ Indexes:
     "employee_pkey" PRIMARY KEY, btree (id)
     
     
-For Single insert db query execution
+# For Single insert db query execution
 C02YM0ADJG5J:plsql pkuma679$ go run main.go 
 Executing with transaction
 Total time taken1 :  0.520
@@ -37,7 +37,7 @@ Total time taken1 :  0.518
 Executing without transaction
 Total time taken1 :  1.125
 
-For 500 insert db query execution
+# For 500 insert db query execution
 C02YM0ADJG5J:plsql pkuma679$ go run main.go 
 Executing with transaction
 Total time taken1 :  13.415
